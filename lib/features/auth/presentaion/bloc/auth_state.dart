@@ -8,9 +8,9 @@ class AuthInitial extends AuthState {}
 class AuthLoading extends AuthState {}
 
 class AuthSuccess extends AuthState {
-  final String uid;
+  final User user;
 
-  AuthSuccess(this.uid);
+  AuthSuccess(this.user);
 }
 
 class AuthFailure extends AuthState {
